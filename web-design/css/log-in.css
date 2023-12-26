@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Khand-Bold";
+    src: url(../css/Khand/Khand-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Khand-Light";
+    src: url(../css/Khand/Khand-Light.ttf);
+}
+
+@font-face {
+    font-family: "Khand-Medium";
+    src: url(../css/Khand/Khand-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Khand-Regular";
+    src: url(../css/Khand/Khand-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Khand-SemiBold";
+    src: url(../css/Khand/Khand-SemiBold.ttf);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Khand-Regular";
+}
+
+
+
+
+body{
+    background-image: url(../image/bg1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.container{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.field{
+    width: 200px;
+
+    padding: 40px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.field label{
+    color: white;
+}
+
+.field input{
+    height: 30px;
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+.sign-btn {
+    gap: 7px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-btn button {
+    flex-grow: 1;
+    border: none;
+}
+
+.sign-btn button[type="submit"]{
+    background-color: white;
+}
+
+.sign-btn button[type="button"]{
+    background-color: gray;
+}
+
+.title-log-in{
+    color: white;
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 5px;
+}
+
+form a{
+    color: white;
+}

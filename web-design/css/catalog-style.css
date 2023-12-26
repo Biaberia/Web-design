@@ -1,0 +1,776 @@
+
+@font-face {
+    font-family: "Khand-Bold";
+    src: url(../css/Khand/Khand-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Khand-Light";
+    src: url(../css/Khand/Khand-Light.ttf);
+}
+
+@font-face {
+    font-family: "Khand-Medium";
+    src: url(../css/Khand/Khand-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Khand-Regular";
+    src: url(../css/Khand/Khand-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Khand-SemiBold";
+    src: url(../css/Khand/Khand-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Oxanium-Regular";
+    src: url(../css/Oxanium/static/Oxanium-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Oxanium-Bold";
+    src: url(../css/Oxanium/static/Oxanium-Bold.ttf);
+}
+
+
+@media screen and (max-width: 2500px) {
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Khand-Regular";
+}
+
+body{
+    background-color: black;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0px 160px;
+    height: 100%;
+}
+
+        /*Шапка*/
+
+.lang-panel{
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.log-tit{
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: start;
+}
+
+.log-tit .title{
+    color: white;
+    font: 40px "Oxanium-Bold";
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+        /*Поисковик*/
+
+.search-panel{ 
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 30px;
+}
+
+.search-wrap{
+    width: 300px;
+}
+
+.search{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.search-bar{
+    width: 100%;
+    border: 1px solid #fff;
+    border-right: none;
+    border-radius: 30px 0 0 30px;
+    height: 40px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.search-btn{
+    width: 40px;
+    height: 42px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+
+
+        /*меню*/
+
+.main-menu{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+
+    margin-top: 20px;
+}
+
+.main-menu ul{
+    display: flex;
+    gap: 20px;
+}
+
+.main-menu li{
+    list-style: none;
+    background-color: white;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+
+        /*каталог*/
+
+.container-catalog{
+    max-width: 1600px;
+    margin: 0px 160px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cards-catalog{
+    margin-top: 100px;
+    list-style: none;
+
+    width: 1200px;    
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+
+    width: 200px;
+    height: 400px;
+
+    padding: 16px;
+    margin: 20px;
+}
+
+.card-wrapper img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+    width: 200px;
+    height: 240px;
+}
+
+.card-wrapper img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card-product-title{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: "Khand-SemiBold";
+    margin-bottom: 8px;
+}
+
+.card-product-model{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.card-product-price{
+    font-size: 16px;
+    font-family: "Khand-SemiBold";
+    margin-bottom: 8px;
+}
+
+.card-product-btn{
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+        /*подвал*/
+
+.links{
+    margin-top: 100px;
+
+    /* border-top: 5px solid white; */
+}
+
+.links .title{
+    display: flex;
+    justify-content: center;
+
+    color: white;
+    font-size: 40px;
+    font-family: "Khand-SemiBold";
+
+    padding: 20px 0px;
+}
+
+.links .link-btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+
+
+.for-users{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+
+    margin-top: 70px;
+}
+
+
+
+
+.payment{
+    width: 250px;
+    height: 200px;
+}
+
+.payment .title{
+    color: white;
+    font-size: 24px;
+    font-family: "Khand-SemiBold";
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.payment ul{
+    display: flex;
+    justify-content: center;
+}
+
+.payment ul li{
+    list-style: none;
+    line-height: 0px;
+    margin: 7px;
+}
+
+
+
+
+
+.benefits{
+    width: 250px;
+    height: 200px;
+}
+
+.benefits .title{
+    color: white;
+    font-size: 24px;
+    font-family: "Khand-SemiBold";
+
+    display: flex;
+    justify-content: start;
+    
+    margin-bottom: 25px;
+}
+
+.benefits ul li{
+    list-style: none;
+}
+
+.benefits ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: "Khand-SemiBold";
+}
+
+.benefits ul li:hover a{
+    text-decoration: underline;
+}
+
+
+
+
+
+.service{
+    width: 250px;
+    height: 200px;
+}
+
+.service .title{
+    color: white;
+    font-size: 24px;
+    font-family: "Khand-SemiBold";
+
+    display: flex;
+    justify-content: start;
+
+    margin-bottom: 25px;
+}
+
+.service ul li{
+    list-style: none;
+}
+
+.service ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: "Khand-SemiBold";
+}
+
+.service ul li:hover a{
+    text-decoration: underline;
+}
+
+
+
+
+.privacy-policy{
+    display: flex;
+    justify-content: end;
+
+    color: white;
+    font-size: 16px;
+    font-family: "Khand-SemiBold";
+}
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Khand-Regular";
+    }
+    
+    body{
+        background-color: black;
+    }
+    
+    .container {
+        max-width: 450px;
+        margin: 0px 10px;
+        height: 100%;
+    }
+    
+            /*Шапка*/
+
+    .lang-panel{
+        color: white;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .log-tit{
+        padding: 20px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo img{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: start;
+    }
+    
+    .log-tit .title{
+        color: white;
+        font: 20px "Oxanium-Bold";
+        align-self: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+            /*Поисковик*/
+    
+    .search-panel{ 
+        display: flex;
+        justify-content: center;
+
+        border-top: 1px solid white;
+
+        padding-top: 20px;
+    
+        padding-bottom: 30px;
+    }
+    
+    .search-wrap{
+        width: 200px;
+    }
+    
+    .search{
+        width: 100%;
+        position: relative;
+        display: flex;
+    }
+    
+    .search-bar{
+        width: 100%;
+        border: 1px solid #fff;
+        border-right: none;
+        border-radius: 30px 0 0 30px;
+        height: 40px;
+        outline: none;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    
+    .search-btn{
+        width: 40px;
+        height: 41px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 0 30px 30px 0;
+        cursor: pointer;
+        padding-right: 5px;
+    }
+    
+    
+    
+            /*меню*/
+    
+    .main-menu{
+        display: none;
+        justify-content: center;
+        padding: 10px 0px;
+        border-bottom: 5px solid white;
+        border-top: 5px solid white;
+    
+        margin-top: 20px;
+    }
+    
+    .main-menu ul{
+        display: none;
+        /* gap: 20px; */
+    }
+    
+    /* .main-menu li{
+        list-style: none;
+        background-color: white;
+        width: 120px;
+        height: 50px;
+        border-radius: 10px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-menu li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    } */
+    
+    
+    
+    
+            /*каталог*/
+    
+    .container-catalog{
+        max-width: 480px;
+        margin: 0px 20px;
+        height: 100%;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cards-catalog{
+        margin-top: 30px;
+        list-style: none;
+    
+        /* width: 1200px;     */
+    
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .card-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        border-radius: 10px;
+    
+        width: 100px;
+        height: 255px;
+    
+        padding: 16px;
+        margin: 9px;
+    }
+    
+    .card-wrapper img{
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    
+        width: 100px;
+        height: 120px;
+    }
+    
+    .card-wrapper img:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    
+    .card-product-title{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-family: "Khand-SemiBold";
+        margin-bottom: 8px;
+    }
+    
+    .card-product-model{
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .card-product-price{
+        font-size: 16px;
+        font-family: "Khand-SemiBold";
+        margin-bottom: 8px;
+    }
+    
+    .card-product-btn{
+        background-color: black;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    
+    
+    
+            /*подвал*/
+    
+    .links{
+        margin-top: 100px;
+    
+        /* border-top: 5px solid white; */
+    }
+    
+    .links .title{
+        display: flex;
+        justify-content: center;
+    
+        color: white;
+        font-size: 30px;
+        font-family: "Khand-SemiBold";
+    
+        padding: 20px 0px;
+    }
+    
+    .links .link-btn{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .links .link-btn img{
+        width: 120px;
+        height: 40px;
+    }
+    
+    
+    
+    
+    
+    .for-users{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    
+        margin-top: 70px;
+    }
+    
+    
+    
+    
+    .payment{
+        /* width: 250px;
+        height: 200px; */
+
+        position: absolute;
+    }
+            
+    .payment .title{
+        color: white;
+        font-size: 24px;
+        font-family: "Khand-SemiBold";
+    
+        display: none;
+        justify-content: center;
+    
+        margin-bottom: 20px;
+    }
+    
+    .payment ul{
+        display: none;
+        justify-content: center;
+    }
+    
+    .payment ul li{
+        list-style: none;
+        line-height: 0px;
+        margin: 7px;
+    }
+    
+    
+    
+    
+    
+    .benefits{
+        width: 250px;
+        height: 200px;
+        margin-left: 15px;
+    }
+    
+    .benefits .title{
+        color: white;
+        font-size: 24px;
+        font-family: "Khand-SemiBold";
+    
+        display: flex;
+        justify-content: start;
+        
+        margin-bottom: 25px;
+    }
+    
+    .benefits ul li{
+        list-style: none;
+    }
+    
+    .benefits ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-family: "Khand-SemiBold";
+    }
+    
+    /* .benefits ul li:hover a{
+        text-decoration: underline;
+    } */
+    
+    
+    
+    
+    
+    .service{
+        width: 250px;
+        height: 200px;
+    }
+    
+    .service .title{
+        color: white;
+        font-size: 24px;
+        font-family: "Khand-SemiBold";
+    
+        display: flex;
+        justify-content: start;
+    
+        margin-bottom: 25px;
+    }
+    
+    .service ul li{
+        list-style: none;
+    }
+    
+    .service ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-family: "Khand-SemiBold";
+    }
+    
+    /* .service ul li:hover a{
+        text-decoration: underline;
+    }
+     */
+    
+    
+    
+    .privacy-policy{
+        display: flex;
+        justify-content: end;
+    
+        color: white;
+        font-size: 16px;
+        font-family: "Khand-SemiBold";
+    }
+}

@@ -1,0 +1,931 @@
+@font-face {
+    font-family: "Khand-Bold";
+    src: url(../css/Khand/Khand-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Khand-Light";
+    src: url(../css/Khand/Khand-Light.ttf);
+}
+
+@font-face {
+    font-family: "Khand-Medium";
+    src: url(../css/Khand/Khand-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Khand-Regular";
+    src: url(../css/Khand/Khand-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Khand-SemiBold";
+    src: url(../css/Khand/Khand-SemiBold.ttf);
+}
+
+
+@media screen and (max-width: 2500px) {
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Khand-Regular";
+    }
+    
+    body{
+        background-image: url(../image/bg1.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    header {
+        width: 100%;
+        height: 226px;
+    }
+    
+    .container {
+        max-width: 1600px;
+        margin: 0px 160px;
+        height: 100%;
+    }
+    
+    
+    .lang-panel{ /*Языковая панель*/
+        color: white;
+        font-size: 18px;
+        padding: 7px 0px;
+        margin: 5px 0px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .lang-panel span{
+        margin-right: 5px;
+    }
+    
+    
+    
+    
+                /*Header*/
+    
+    .custom-menu { /*Пользовательский блок*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 0px;
+        border-top: 5px solid white;
+        border-bottom: 5px solid white;
+    }
+    
+    
+    
+    .logo img{  /*Лого*/
+        display: flex;
+        width: 70px;
+        height: 70px;
+        padding-right: 120px;
+    }
+    
+    
+    
+    .search-wrap{   /*Поисковик*/
+        width: 300px;
+    }
+    
+    .search{
+        width: 100%;
+        position: relative;
+        display: flex;
+    }
+    
+    .search-bar{
+        width: 100%;
+        border: 1px solid #fff;
+        border-right: none;
+        border-radius: 30px 0 0 30px;
+        height: 40px;
+        outline: none;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    
+    .search-btn{
+        width: 40px;
+        height: 42px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 0 30px 30px 0;
+        cursor: pointer;
+        padding-right: 5px;
+    }
+    
+    
+    
+    .user-btn{  /*Кнопки пользователя*/
+        display: flex;
+        gap: 20px;
+    }
+    
+    .user-btn a{
+        text-decoration: none;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+    }
+    
+    
+    
+    
+    
+                /*Nav-Menu*/
+    
+    .main-menu{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 5px solid white;
+    }
+    
+    .main-menu ul{
+        display: flex;
+        gap: 20px;
+    }
+    
+    .main-menu li{
+        list-style: none;
+        background-color: white;
+        width: 120px;
+        height: 50px;
+        border-radius: 10px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-menu li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    
+    
+    
+    
+    
+                /*Slider*/
+    
+    .cont-slider{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .slider{
+        margin-top: 20px;
+    
+        width: 800px;
+        height: 450px;
+        overflow:hidden;
+        position:relative;
+    }
+    
+    
+    .slider img{
+        position:absolute;
+        animation:round 15s infinite;
+        opacity:0;
+        width:100%
+    }
+
+    
+    @keyframes round {
+        30%{opacity:1}
+        50%{opacity:0}
+    }
+    
+    img:nth-child(1){animation-delay:7.5s}
+    img:nth-child(2){animation-delay:5s}
+    img:nth-child(3){animation-delay:2.5s}
+    img:nth-child(4){animation-delay:0s}
+    
+    
+    
+                /*Catalog*/
+    
+    .catalog-title{
+        color: white;
+        font-size: 40px;
+        font-family: "Khand-SemiBold";
+        margin-top: 100px;
+    
+        display: flex;
+        justify-content: center;
+    }            
+    
+    
+    .catalog{
+        display: flex;
+        justify-content: center;
+    
+        margin-top: 30px;
+    }
+    
+    .catalog ul li{
+        list-style: none;
+        line-height: 0px;
+        background-color: white;
+        width: 300px;
+        height: 110px;
+        border-radius: 10px;
+        margin: 0 0 10px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .catalog ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+    }
+    
+    
+    
+                /*Brands*/
+    
+    .brands-slider{
+        margin-top: 100px;
+    }
+    
+    .brands-title{
+        color: white;
+        font-size: 40px;
+        font-family: "Khand-SemiBold";
+        margin-bottom: 20px;
+    
+        display: flex;
+        justify-content: center;
+    } 
+    
+    .item a{
+        text-decoration: none;
+    }
+    
+    .brand-items{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    
+        margin-top: 12px;
+    }
+
+    .brand-items-text{
+        display: none;
+    }
+    
+    
+    
+    
+                /*Offers*/
+    
+    
+    .offers{
+        margin-top: 100px;
+    }
+    
+    .offers-title{
+        display: flex;
+        justify-content: center;
+    
+        color: white;
+        font-size: 40px;
+        font-family: "Khand-SemiBold";
+    }
+    
+    .hot-offers{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    
+    
+    
+                /*footer*/
+    
+    .links{
+        margin-top: 100px;
+    
+        border-top: 5px solid white;
+    }
+    
+    .links .title{
+        display: flex;
+        justify-content: center;
+    
+        color: white;
+        font-size: 40px;
+        font-family: "Khand-SemiBold";
+    
+        padding: 20px 0px;
+    }
+    
+    .links .link-btn{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    
+    
+    
+    
+    .for-users{
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+    
+        margin-top: 70px;
+    }
+    
+    
+    
+    
+    .payment{
+        width: 250px;
+        height: 200px;
+    }
+    
+    .payment .title{
+        color: white;
+        font-size: 24px;
+        font-family: "Khand-SemiBold";
+    
+        display: flex;
+        justify-content: center;
+    
+        margin-bottom: 20px;
+    }
+    
+    .payment ul{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .payment ul li{
+        list-style: none;
+        line-height: 0px;
+        margin: 7px;
+    }
+    
+    
+    
+    
+    
+    .benefits{
+        width: 250px;
+        height: 200px;
+    }
+    
+    .benefits .title{
+        color: white;
+        font-size: 24px;
+        font-family: "Khand-SemiBold";
+    
+        display: flex;
+        justify-content: start;
+        
+        margin-bottom: 25px;
+    }
+    
+    .benefits ul li{
+        list-style: none;
+    }
+    
+    .benefits ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-family: "Khand-SemiBold";
+    }
+    
+    .benefits ul li:hover a{
+        text-decoration: underline;
+    }
+    
+    
+    
+    
+    
+    .service{
+        width: 250px;
+        height: 200px;
+    }
+    
+    .service .title{
+        color: white;
+        font-size: 24px;
+        font-family: "Khand-SemiBold";
+    
+        display: flex;
+        justify-content: start;
+    
+        margin-bottom: 25px;
+    }
+    
+    .service ul li{
+        list-style: none;
+    }
+    
+    .service ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-family: "Khand-SemiBold";
+    }
+    
+    .service ul li:hover a{
+        text-decoration: underline;
+    }
+    
+    
+    
+    
+    .privacy-policy{
+        display: flex;
+        justify-content: end;
+    
+        color: white;
+        font-size: 16px;
+        font-family: "Khand-SemiBold";
+    }
+}
+
+@media screen and (max-width: 480px) {
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Khand-Regular";
+    }
+    
+    body{
+        background-color: black;
+    }
+    
+    header {
+        width: 100%;
+        height: 226px;
+    }
+    
+    .container {
+        max-width: 450px;
+        margin: 0px 10px;
+        height: 100%;
+
+    }
+    
+    
+    .lang-panel{ /*Языковая панель*/
+        color: white;
+        font-size: 18px;
+        padding: 7px 0px;
+        margin: 5px 0px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .lang-panel span{
+        margin-right: 5px;
+    }
+    
+    
+    
+    
+                /*Header*/
+    
+    .custom-menu { /*Пользовательский блок*/
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 7px 0px;
+    }
+    
+    
+    
+    .logo img{  /*Лого*/
+        display: flex;
+        width: 60px;
+        height: 60px;
+        /* padding-right: 120px; */
+    }
+    
+    
+    
+    .search-wrap{   /*Поисковик*/
+        width: 200px;
+        margin-left: -30px;
+    }
+    
+    .search{
+        width: 100%;
+        position: relative;
+    }
+    
+    .search-bar{
+        width: 100%;
+        border: 1px solid #fff;
+        border-right: none;
+        border-radius: 30px 0 0 30px;
+        height: 40px;
+        outline: none;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    
+    .search-btn{
+        width: 40px;
+        height: 41px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 0 30px 30px 0;
+        cursor: pointer;
+        padding-right: 5px;
+    }
+    
+    
+    
+    .user-btn{  /*Кнопки пользователя*/
+        display: none;
+    }
+    
+    /* .user-btn a{
+        text-decoration: none;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+    } */
+
+    /*Nav-Menu*/
+
+    .main-menu{
+        display: none;
+        /* justify-content: center;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 5px solid white; */
+    }
+            
+    /* .main-menu ul{
+        display: none;
+        gap: 20px;
+    }
+            
+    .main-menu li{
+        list-style: none;
+        background-color: white;
+        width: 120px;
+        height: 50px;
+        border-radius: 10px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+            
+    .main-menu li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+             */
+            
+            
+            
+            
+            /*Slider*/
+            
+    .cont-slider{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .slider{
+        margin-top: -50px;
+    
+        width: 400px;
+        height: 250px;
+        overflow:hidden;
+        position:relative;
+    }
+
+            
+            
+    .slider img{
+        position:absolute;
+        animation:round 15s infinite;
+        opacity:0;
+        width:100%
+    }
+            
+    @keyframes round {
+        30%{opacity:1}
+        50%{opacity:0}
+    }
+            
+    img:nth-child(1){animation-delay:7.5s}
+    img:nth-child(2){animation-delay:5s}
+    img:nth-child(3){animation-delay:2.5s}
+    img:nth-child(4){animation-delay:0s}
+            
+            
+            
+                /*Catalog*/
+    
+    .catalog-title{
+        color: white;
+        font-size: 30px;
+        font-family: "Khand-SemiBold";
+        margin-top: 10px;
+    
+        display: flex;
+        justify-content: center;
+    }            
+            
+            
+    .catalog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        margin-top: 30px;
+    }
+
+    .catalog ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .catalog ul li{
+        list-style: none;
+        line-height: 0px;
+        background-color: white;
+        width: 300px;
+        height: 80px;
+        border-radius: 10px;
+        margin: 0 0 10px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+            
+    .catalog ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    
+    
+    
+                /*Brands*/
+    
+    .brands-slider{
+        margin-top: 100px;
+    }
+    
+    .brands-title{
+        color: white;
+        font-size: 30px;
+        font-family: "Khand-SemiBold";
+        margin-bottom: 20px;
+    
+        display: flex;
+        justify-content: center;
+    } 
+    
+    .mob{
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+    }
+
+    .item a{
+        color: white;
+        font-size: 18px;
+    }
+    
+    .brand-items{
+        display: none;
+    }
+
+    .brand-items-text{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+                /*Offers*/
+    
+    
+    /* .offers{
+        margin-top: 100px;
+    } */
+    
+    .offers-title{
+        display: none;
+        justify-content: center;
+    
+        color: white;
+        font-size: 40px;
+        font-family: "Khand-SemiBold";
+    }
+    
+    .hot-offers{
+        display: none;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    
+    
+    
+                /*footer*/
+    
+    .links{
+        margin-top: 100px;
+    
+        border-top: 5px solid white;
+    }
+    
+    .links .title{
+        display: flex;
+        justify-content: center;
+    
+        color: white;
+        font-size: 30px;
+        font-family: "Khand-SemiBold";
+    
+        padding: 20px 0px;
+    }
+    
+    .links .link-btn{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .links .link-btn img{
+        width: 120px;
+        height: 40px;
+    }
+    
+    
+    
+    
+    
+    .for-users{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    
+        margin-top: 70px;
+    }
+    
+    
+    
+    
+    .payment{
+        /* width: 250px;
+        height: 200px; */
+
+        position: absolute;
+    }
+            
+    .payment .title{
+        color: white;
+        font-size: 24px;
+        font-family: "Khand-SemiBold";
+    
+        display: none;
+        justify-content: center;
+    
+        margin-bottom: 20px;
+    }
+    
+    .payment ul{
+        display: none;
+        justify-content: center;
+    }
+    
+    .payment ul li{
+        list-style: none;
+        line-height: 0px;
+        margin: 7px;
+    }
+    
+    
+    
+    
+    
+    .benefits{
+        width: 250px;
+        height: 200px;
+        margin-left: 15px;
+    }
+    
+    .benefits .title{
+        color: white;
+        font-size: 24px;
+        font-family: "Khand-SemiBold";
+    
+        display: flex;
+        justify-content: start;
+        
+        margin-bottom: 25px;
+    }
+    
+    .benefits ul li{
+        list-style: none;
+    }
+    
+    .benefits ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-family: "Khand-SemiBold";
+    }
+    
+    /* .benefits ul li:hover a{
+        text-decoration: underline;
+    } */
+    
+    
+    
+    
+    
+    .service{
+        width: 250px;
+        height: 200px;
+    }
+    
+    .service .title{
+        color: white;
+        font-size: 24px;
+        font-family: "Khand-SemiBold";
+    
+        display: flex;
+        justify-content: start;
+    
+        margin-bottom: 25px;
+    }
+    
+    .service ul li{
+        list-style: none;
+    }
+    
+    .service ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-family: "Khand-SemiBold";
+    }
+    
+    /* .service ul li:hover a{
+        text-decoration: underline;
+    }
+     */
+    
+    
+    
+    .privacy-policy{
+        display: flex;
+        justify-content: end;
+    
+        color: white;
+        font-size: 16px;
+        font-family: "Khand-SemiBold";
+    }
+}
